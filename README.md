@@ -10,7 +10,7 @@ Este repositório reúne estudos práticos, laboratórios controlados e document
 
 | Projeto | Foco | Status |
 |---|---|---|
-| [01 — Phishing Analysis](./01-phishing-analysis/README.md) | Triagem de e-mail suspeito, cabeçalhos e IOCs | Análise inicial concluída |
+| [01 — Phishing Analysis](./01-phishing-analysis/README.md) | Triagem de e-mail suspeito, cabeçalhos e IOCs | Versão 1.0 concluída; LinkedIn pendente |
 | [02 — SOC Home Lab](./02-soc-home-lab/README.md) | Monitoramento, coleta de logs e investigação de alertas | Planejado |
 | [03 — TryHackMe](./03-tryhackme/README.md) | Laboratórios e anotações de segurança | Em organização |
 
