@@ -1,6 +1,6 @@
 # 01 — Phishing Analysis
 
-**Status:** Análise inicial concluída | Relatório publicado
+**Status:** Versão 1.0 concluída | Apresentação no LinkedIn pendente
 
 ## Projeto
 
@@ -24,7 +24,7 @@ Principais achados:
 - [Relatório completo sanitizado](./relatorio-phishing-detran.md)
 - [Repositório principal](../README.md)
 
-O PDF de uma página foi gerado separadamente para consulta e apresentação. Dados pessoais do destinatário e identificadores internos da caixa postal foram omitidos.
+O PDF de uma página e a prévia visual foram arquivados no Dropbox privado, junto da mensagem original. O repositório público contém apenas a documentação sanitizada em Markdown. Dados pessoais do destinatário e identificadores internos da caixa postal foram omitidos.
 
 ## Entregáveis
 
@@ -33,8 +33,10 @@ O PDF de uma página foi gerado separadamente para consulta e apresentação. Da
 - [x] IOCs identificados e defangados.
 - [x] Relatório técnico sanitizado em Markdown.
 - [x] Relatório executivo de uma página em PDF.
-- [ ] Capturas de evidências sanitizadas para anexar ao repositório.
-- [ ] Revisão final do material para apresentação no LinkedIn.
+- [x] Evidência visual sanitizada arquivada no Dropbox privado.
+- [x] PDF executivo arquivado no Dropbox privado.
+- [x] Relatório técnico sanitizado publicado no GitHub.
+- [ ] Preparar e publicar apresentação no LinkedIn (próxima etapa).
 
 ## Metodologia e segurança
 
