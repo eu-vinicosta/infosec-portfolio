@@ -1,45 +1,49 @@
 # 01 — Phishing Analysis
 
-**Status:** Planejado
+**Status:** Análise inicial concluída | Relatório publicado
 
-## Objetivo
+## Projeto
 
-Investigar um e-mail suspeito de forma segura, identificar sinais de phishing e produzir um relatório técnico conciso, com evidências sanitizadas.
+Investigação estática de uma mensagem que se apresenta como notificação do Detran e ameaça suspender a CNH do destinatário. A análise utilizou o arquivo original `.eml`, incluindo cabeçalhos SMTP e HTML.
 
-## Escopo
+## Resultado
 
-- Revisar remetente, endereço de resposta, assunto e conteúdo.
-- Examinar cabeçalhos disponíveis: `Received`, `Return-Path`, `Reply-To`, `Authentication-Results` (SPF, DKIM e DMARC), quando presentes.
-- Identificar URLs, domínios, anexos mencionados e possíveis indicadores de comprometimento (IOCs), sem abrir links ou executar arquivos.
-- Correlacionar os achados e registrar limitações.
+**Classificação:** phishing com alta confiança.
 
-## Metodologia prevista
+Principais achados:
+- SPF, DKIM e DMARC sem resultados positivos (`none`).
+- Remetente e Return-Path usando `infracao@detran276448`, sem domínio institucional oficial.
+- IP observado no primeiro salto SMTP: `149.28.215.14`.
+- URL com texto semelhante a Microsoft antes de `@`; o host real está depois de `@` e usa `run.app`.
+- Identificadores de processo e protocolo inconsistentes.
+- CNPJ informado no rodapé não passa na validação matemática dos dígitos verificadores.
+- Metadados do Microsoft 365 indicam entrega na pasta de lixo eletrônico.
 
-1. Selecionar uma mensagem suspeita recebida pelo próprio analista.
-2. Exportar a mensagem como `.eml` ou copiar cabeçalhos completos.
-3. Remover dados pessoais e informações sensíveis antes de compartilhar ou publicar.
-4. Analisar os campos e sinais técnicos disponíveis.
-5. Classificar os achados, separando evidência de hipótese.
-6. Elaborar um relatório de uma página com conclusão e recomendações.
+## Relatório técnico
 
-## Ferramentas possíveis
+- [Relatório completo sanitizado](./relatorio-phishing-detran.md)
+- [Repositório principal](../README.md)
 
-- Cliente de e-mail e visualizador de cabeçalhos.
-- Python para parsing local de mensagens, se necessário.
-- Ferramentas de reputação de domínio/URL, consultadas sem visitar links suspeitos diretamente.
+O PDF de uma página foi gerado separadamente para consulta e apresentação. Dados pessoais do destinatário e identificadores internos da caixa postal foram omitidos.
 
 ## Entregáveis
 
-- [ ] Amostra sanitizada ou artefato reproduzível, sem dados pessoais.
-- [ ] Lista de IOCs observados, com contexto e tipo.
-- [ ] Relatório técnico em PDF.
-- [ ] Evidências (prints sanitizados).
-- [ ] Resumo executivo para apresentação no LinkedIn.
+- [x] Amostra original preservada em armazenamento privado.
+- [x] Cabeçalhos e conteúdo HTML analisados.
+- [x] IOCs identificados e defangados.
+- [x] Relatório técnico sanitizado em Markdown.
+- [x] Relatório executivo de uma página em PDF.
+- [ ] Capturas de evidências sanitizadas para anexar ao repositório.
+- [ ] Revisão final do material para apresentação no LinkedIn.
 
-## Modelo de conclusão
+## Metodologia e segurança
 
-A conclusão será preenchida após a análise da amostra. Não serão presumidos resultados antes da inspeção do e-mail.
+- Análise estática do arquivo `.eml`.
+- Nenhum link foi aberto e nenhum anexo foi executado.
+- O IP e o hostname não foram acessados; reputação externa não foi confirmada.
+- Dados pessoais, Message-ID e identificadores internos foram omitidos da publicação.
+- A amostra original não deve ser publicada em repositório público.
 
-## Cuidados
+## Aprendizados demonstrados
 
-Não clicar nos links, não baixar/abrir anexos e não responder ao remetente. Não publicar endereços, nomes, IDs de mensagens, tokens ou dados de terceiros. Se a mensagem contiver informação confidencial, usar uma amostra pública ou sintética.
+Leitura de cabeçalhos SMTP; interpretação de SPF/DKIM/DMARC; análise de Received e Return-Path; extração segura de URLs; reconhecimento de userinfo em URLs; identificação de engenharia social; registro de IOCs e limitações.
