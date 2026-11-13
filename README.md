@@ -4,15 +4,15 @@ Cybersecurity & Information Security Projects
 
 Este repositório reúne estudos práticos, laboratórios controlados e documentação técnica desenvolvidos para demonstrar competências em Segurança da Informação, com foco em **SOC N1, Blue Team e análise de ameaças**.
 
-> **Status:** portfólio em construção. Os projetos abaixo começam como planos documentados; resultados, evidências e conclusões serão adicionados somente após a execução e validação de cada atividade.
+> **Status:** portfólio em construção. Resultados e evidências são adicionados após a execução e validação de cada atividade.
 
 ## Projetos
 
 | Projeto | Foco | Status |
 |---|---|---|
-| [01 — Phishing Analysis](./01-phishing-analysis/README.md) | Triagem de e-mail suspeito, análise de cabeçalhos e IOCs | Planejado |
+| [01 — Phishing Analysis](./01-phishing-analysis/README.md) | Triagem de e-mail suspeito, cabeçalhos e IOCs | Análise inicial concluída |
 | [02 — SOC Home Lab](./02-soc-home-lab/README.md) | Monitoramento, coleta de logs e investigação de alertas | Planejado |
-| [03 — TryHackMe](./03-tryhackme/README.md) | Laboratórios, anotações e aprendizado em segurança ofensiva e defensiva | Em organização |
+| [03 — TryHackMe](./03-tryhackme/README.md) | Laboratórios e anotações de segurança | Em organização |
 
 ## Competências trabalhadas
 
@@ -26,7 +26,7 @@ Este repositório reúne estudos práticos, laboratórios controlados e document
 
 - Testes técnicos serão realizados somente em ambientes próprios, isolados ou explicitamente autorizados.
 - Nenhum link ou anexo suspeito será aberto ou executado durante a análise de phishing.
-- Dados pessoais, credenciais, tokens, endereços privados e informações de terceiros serão removidos das evidências públicas.
+- Dados pessoais, credenciais, tokens, endereços privados e identificadores internos serão removidos das evidências públicas.
 - Simulações serão identificadas como simulações; não serão apresentadas como incidentes reais.
 - Cada relatório distinguirá fatos observados, hipóteses e limitações da análise.
 
@@ -36,7 +36,8 @@ Este repositório reúne estudos práticos, laboratórios controlados e document
 infosec-portfolio/
 ├── README.md
 ├── 01-phishing-analysis/
-│   └── README.md
+│   ├── README.md
+│   └── relatorio-phishing-detran.md
 ├── 02-soc-home-lab/
 │   └── README.md
 └── 03-tryhackme/
