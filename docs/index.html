@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de estudos em Segurança da Informação, análise de phishing e monitoramento SOC com Wazuh.">
+  <meta name="theme-color" content="#101820">
+  <title>Portfólio InfoSec | SOC N1 e Blue Team</title>
+  <link rel="stylesheet" href="./assets/css/site.css">
+  <script src="./assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="InfoSec Portfolio, início">
+      <span class="brand-mark" aria-hidden="true">IS</span>
+      <span>InfoSec Portfolio</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-label">Menu</span>
+      <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#laboratorio">SOC Home Lab</a>
+      <a href="#evidencias">Evidências</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Portfólio de estudos em segurança defensiva</p>
+        <h1>Investigar com método.<br><span>Documentar com clareza.</span></h1>
+        <p class="hero-lede">Projetos práticos de análise de phishing e monitoramento de eventos em laboratório próprio, com evidências revisadas e limites técnicos explícitos.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="https://github.com/eu-vinicosta/infosec-portfolio" target="_blank" rel="noreferrer">Ver repositório <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="role-line">Foco profissional: SOC N1 · Blue Team · Segurança da Informação Jr.</p>
+      </div>
+      <div class="hero-art" aria-label="Ilustração abstrata de eventos passando por camadas de análise" role="img">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="core-node"><span>EVENT</span><strong>→</strong><span>TRIAGE</span></div>
+        <span class="signal signal-a">01</span><span class="signal signal-b">LOG</span><span class="signal signal-c">RULE</span>
+      </div>
+    </section>
+
+    <section class="intro-band section-shell" aria-label="Princípios do portfólio">
+      <p><strong>Simulações controladas</strong><span>Ambiente próprio e isolado</span></p>
+      <p><strong>Evidência antes da conclusão</strong><span>Fatos, interpretação e limites separados</span></p>
+      <p><strong>Privacidade por padrão</strong><span>Originais privados; recortes revisados</span></p>
+    </section>
+
+    <section id="projetos" class="section-shell section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Trabalho documentado</p>
+        <h2>Projetos</h2>
+        <p>Dois projetos finalizados nesta versão do portfólio. O próximo passo de aprendizagem está identificado como planejado.</p>
+      </div>
+
+      <article class="project-card phishing-card">
+        <div class="project-index">01 <span>ANÁLISE DE AMEAÇAS</span></div>
+        <div class="project-body">
+          <div class="project-title-row"><div><p class="eyebrow">Phishing Analysis</p><h3>Falsa notificação do Detran</h3></div><span class="pill">Relatório v1.0</span></div>
+          <p>Investigação estática de uma mensagem que simulava uma notificação de suspensão da CNH. A análise considerou cabeçalhos SMTP, autenticação de domínio, conteúdo HTML e a estrutura do link exibido.</p>
+          <div class="finding-grid">
+            <div><span class="finding-label">Achado</span><strong>Phishing com alta confiança</strong></div>
+            <div><span class="finding-label">Método</span><strong>Análise offline de EML</strong></div>
+            <div><span class="finding-label">Limite</span><strong>O site não foi acessado</strong></div>
+          </div>
+          <p class="quiet-note">O relatório não afirma o que o site faria: coleta de dados, cobrança ou atividade posterior não foram testadas.</p>
+          <a class="text-link" href="https://github.com/eu-vinicosta/infosec-portfolio/blob/main/01-phishing-analysis/relatorio-phishing-detran.md" target="_blank" rel="noreferrer">Ler relatório sanitizado <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article id="laboratorio" class="project-card lab-card">
+        <div class="project-index">02 <span>DEFESA E MONITORAMENTO</span></div>
+        <div class="project-body">
+          <div class="project-title-row"><div><p class="eyebrow">SOC Home Lab</p><h3>Telemetria Windows e detecção com Wazuh</h3></div><span class="pill pill-green">5 cenários documentados</span></div>
+          <p>Laboratório local com três máquinas virtuais para gerar eventos controlados, coletar telemetria Windows, observar alertas e registrar o que os dados demonstram — e o que não demonstram.</p>
+          <div class="architecture" aria-label="Fluxo do laboratório: Kali Linux para Windows com Sysmon e agente Wazuh, depois para Wazuh Manager, Indexer e Dashboard">
+            <div class="arch-node"><span class="arch-icon">K</span><strong>Kali Linux</strong><small>Atividade controlada</small></div>
+            <span class="arch-arrow" aria-hidden="true">→</span>
+            <div class="arch-node"><span class="arch-icon">W</span><strong>Windows 11</strong><small>Sysmon + Wazuh Agent</small></div>
+            <span class="arch-arrow" aria-hidden="true">→</span>
+            <div class="arch-node arch-node-wide"><span class="arch-icon">SIEM</span><strong>Ubuntu Server</strong><small>Manager · Indexer · Dashboard</small></div>
+          </div>
+          <a class="text-link" href="https://github.com/eu-vinicosta/infosec-portfolio/blob/docs/soc-home-lab-v2/02-soc-home-lab/README.md" target="_blank" rel="noreferrer">Ver documentação do laboratório <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section-shell section-block scenario-section">
+      <div class="section-heading">
+        <p class="eyebrow">SOC Home Lab · MITRE ATT&CK</p>
+        <h2>Cinco cenários, resultados delimitados</h2>
+        <p>Os alertas apoiam a triagem. Isoladamente, não comprovam intenção maliciosa ou comprometimento.</p>
+      </div>
+      <div class="scenario-grid">
+        <article class="scenario-card"><span class="scenario-number">01</span><p class="scenario-technique">T1033 · Discovery</p><h3>whoami.exe</h3><p>Sysmon Event ID 1 · regra local 100100 · nível 5.</p><p class="scenario-result">Execução classificada como descoberta de usuário.</p></article>
+        <article class="scenario-card"><span class="scenario-number">02</span><p class="scenario-technique">T1016 · Discovery</p><h3>ipconfig.exe /all</h3><p>Sysmon Event ID 1 · regra local 100101 · nível 5.</p><p class="scenario-result">Consulta de configuração de rede classificada pelo Wazuh.</p></article>
+        <article class="scenario-card"><span class="scenario-number">03</span><p class="scenario-technique">T1110.001 · Credential Access</p><h3>Falhas de autenticação</h3><p>Security Event ID 4625 · regra local 100102 · nível 10.</p><p class="scenario-result">Três falhas locais em 600 s; origem loopback. Não foi um teste remoto.</p></article>
+        <article class="scenario-card"><span class="scenario-number">04</span><p class="scenario-technique">T1046 · Discovery</p><h3>Nmap SYN · top 20</h3><p>Security Event ID 5157 · regras locais 100103 e 100104.</p><p class="scenario-result">20 portas `filtered`; nenhuma porta aberta foi identificada.</p></article>
+        <article class="scenario-card scenario-card-wide"><span class="scenario-number">05</span><p class="scenario-technique">T1059.001 · Execution</p><h3>PowerShell com comando codificado</h3><p>Sysmon Event ID 1 · regra nativa Wazuh 92057 · nível 12.</p><p class="scenario-result">Payload benigno de laboratório. A regra experimental 100105 passou apenas no wazuh-logtest, não gerou o alerta real e foi removida.</p></article>
+      </div>
+    </section>
+
+    <section id="evidencias" class="evidence-section section-block">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Evidência selecionada</p>
+          <h2>Recortes revisados para publicação</h2>
+          <p>Quatro imagens sustentam os cenários 04 e 05. Os cenários 01–03 são apresentados em cartões textuais para evitar capturas redundantes ou com identificadores internos.</p>
+        </div>
+        <div class="evidence-grid">
+          <figure class="evidence-card">
+            <img src="./assets/evidence/scenario-04-nmap-results.png" width="410" height="350" loading="lazy" alt="Recorte da tabela de resultados Nmap mostrando 20 portas TCP, todas no estado filtered.">
+            <figcaption><span class="evidence-tag">Cenário 04 · T1046</span><strong>Resultado Nmap</strong><span>As 20 portas listadas aparecem como `filtered`. O recorte omite MAC e identidade do terminal.</span></figcaption>
+          </figure>
+          <figure class="evidence-card">
+            <img src="./assets/evidence/scenario-04-wazuh-alert-detail.png" width="928" height="242" loading="lazy" alt="Recorte do detalhe do alerta Wazuh com a regra 100104, nível 10 e MITRE T1046.">
+            <figcaption><span class="evidence-tag">Cenário 04 · T1046</span><strong>Detalhe do alerta Wazuh</strong><span>Regra 100104, nível 10 e técnica T1046. IPs, hostname e campos internos foram omitidos.</span></figcaption>
+          </figure>
+          <figure class="evidence-card">
+            <img src="./assets/evidence/scenario-05-wazuh-alert-overview.png" width="1863" height="330" loading="lazy" alt="Visão geral do Wazuh com dois alertas da regra 92057, ambos nível 12; coluna do agente sem hostname visível.">
+            <figcaption><span class="evidence-tag">Cenário 05 · T1059.001</span><strong>Visão geral dos alertas</strong><span>Dois eventos da regra nativa 92057, nível 12. O hostname do agente não aparece.</span></figcaption>
+          </figure>
+          <figure class="evidence-card">
+            <img src="./assets/evidence/scenario-05-wazuh-alert-detail.png" width="930" height="303" loading="lazy" alt="Recorte do detalhe da regra 92057, nível 12, MITRE T1059.001, tática Execution e técnica PowerShell.">
+            <figcaption><span class="evidence-tag">Cenário 05 · T1059.001</span><strong>Detalhe da detecção</strong><span>Regra 92057, nível 12 e mapeamento MITRE. O nome interno do Manager foi removido do recorte.</span></figcaption>
+          </figure>
+        </div>
+        <p class="evidence-footnote">Os arquivos JSON e screenshots integrais permanecem privados. Nenhuma tela foi fabricada; os recortes são derivados das capturas existentes.</p>
+      </div>
+    </section>
+
+    <section class="section-shell section-block">
+      <div class="two-column">
+        <div>
+          <p class="eyebrow">Ferramentas observadas</p>
+          <h2>Stack do laboratório</h2>
+          <ul class="tool-list">
+            <li><span>SIEM</span><strong>Wazuh 4.14.10</strong></li>
+            <li><span>Endpoint</span><strong>Windows 11 Pro · Sysmon 15.22</strong></li>
+            <li><span>Coleta</span><strong>Wazuh Agent 4.14.10</strong></li>
+            <li><span>Testes</span><strong>Kali Linux 2026.3 · Nmap 7.99</strong></li>
+            <li><span>Virtualização</span><strong>Oracle VirtualBox 7.2.22</strong></li>
+          </ul>
+        </div>
+        <div class="learning-panel">
+          <p class="eyebrow">Aprendizados e limites</p>
+          <h2>Contexto muda a interpretação</h2>
+          <ul>
+            <li>Falhas de login locais via loopback não representam ataque remoto.</li>
+            <li>Portas `filtered` não são evidência de portas abertas.</li>
+            <li>PowerShell com Base64 pode ser legítimo; o payload do exercício era benigno.</li>
+            <li>Ativar `logall_json` para investigação bruta exige controlar retenção e desligar a coleta extra ao concluir.</li>
+          </ul>
+          <p class="config-state">Estado registrado ao fechamento: <code>logall=no</code> · <code>logall_json=no</code> · <code>jsonout_output=yes</code> · <code>alerts_log=yes</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="next-step section-shell section-block">
+      <div class="next-step-mark" aria-hidden="true">03</div>
+      <div><p class="eyebrow">Próximo passo planejado</p><h2>TryHackMe</h2><p>Projeto ainda não iniciado nesta etapa. A proposta é registrar laboratórios concluídos e aprendizados sem publicar respostas ou conteúdo restrito pela plataforma.</p></div>
+      <span class="pill">Planejado</span>
+    </section>
+
+    <section id="contato" class="contact-section section-shell section-block">
+      <div>
+        <p class="eyebrow">Contato e código</p>
+        <h2>Vamos conversar sobre segurança defensiva.</h2>
+        <p>Este portfólio reúne projetos de estudo voltados a oportunidades júnior em SOC e Blue Team. Não representa experiência profissional em produção.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="button button-primary" href="https://github.com/eu-vinicosta/infosec-portfolio" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://www.linkedin.com/in/thiegovinicius/" target="_blank" rel="noopener noreferrer">Perfil no LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">IS</span><span>InfoSec Portfolio</span></a>
+    <p>Projetos controlados · Evidências revisadas · Limitações explícitas</p>
+    <a href="https://github.com/eu-vinicosta/infosec-portfolio" target="_blank" rel="noreferrer">Código e documentação no GitHub <span aria-hidden="true">↗</span></a>
+  </footer>
+</body>
+</html>
+

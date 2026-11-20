@@ -1,6 +1,6 @@
 # 03 — TryHackMe
 
-**Status:** Em organização
+**Status:** Planejado; não iniciado
 
 ## Objetivo
 

@@ -1,0 +1,31 @@
+# Cópia pública sanitizada do output original do Nmap.
+# IP privado e endereço MAC foram removidos; o original permanece na VM Kali.
+# Resultado fornecido pelo usuário a partir do arquivo original nmap-soc-win11-scenario04-final.txt.
+# Nmap 7.99 scan initiated Tue Nov 17 17:25:35 2026
+# Parâmetros observados: -sS -T3 --top-ports 20 --reason
+Nmap scan report for [IP PRIVADO REMOVIDO]
+Host is up, received arp-response (0.0010s latency).
+
+PORT     STATE    SERVICE       REASON
+21/tcp   filtered ftp           no-response
+22/tcp   filtered ssh           no-response
+23/tcp   filtered telnet        no-response
+25/tcp   filtered smtp          no-response
+53/tcp   filtered domain        no-response
+80/tcp   filtered http          no-response
+110/tcp  filtered pop3          no-response
+111/tcp  filtered rpcbind       no-response
+135/tcp  filtered msrpc         no-response
+139/tcp  filtered netbios-ssn   no-response
+143/tcp  filtered imap          no-response
+443/tcp  filtered https         no-response
+445/tcp  filtered microsoft-ds  no-response
+993/tcp  filtered imaps         no-response
+995/tcp  filtered pop3s         no-response
+1723/tcp filtered pptp          no-response
+3306/tcp filtered mysql         no-response
+3389/tcp filtered ms-wbt-server no-response
+5900/tcp filtered vnc           no-response
+8080/tcp filtered http-proxy    no-response
+
+# Nmap done at Tue Nov 17 17:25:39 2026 -- 1 IP address (1 host up) scanned in 4.05 seconds

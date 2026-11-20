@@ -20,14 +20,14 @@ A análise dos cabeçalhos e do HTML encontrou ausência de resultados positivos
 
 | Elemento | Achado | Interpretação |
 |---|---|---|
-| From / Return-Path | `infracao@detran276448` | O endereço não usa o domínio oficial divulgado pelo Detran-RJ. O texto de exibição “Detran Notifica” pode ser definido pelo remetente e não comprova identidade. |
+| From / Return-Path | `infracao[@]detran276448` | O endereço não usa o domínio oficial divulgado pelo Detran-RJ. O texto de exibição “Detran Notifica” pode ser definido pelo remetente e não comprova identidade. |
 | SPF | `none` | Nenhum resultado SPF positivo foi apresentado. O domínio de envelope observado é `detran276448`. |
 | DKIM | `none` | A mensagem não apresenta assinatura DKIM validada. |
 | DMARC | `none` | Nenhum resultado DMARC positivo foi apresentado para o domínio do cabeçalho. “None” não deve ser descrito como “fail” sem evidência adicional. |
-| Origem SMTP | `149.28.215.14` | IP registrado no primeiro salto externo de `Received` e em `X-Sender-IP`. A reputação/propriedade do IP não foi enriquecida externamente nesta análise. |
-| HELO / Received | `[127.0.1.1]` | Nome apresentado no salto SMTP usa endereço de loopback, enquanto o IP de conexão registrado é `149.28.215.14`; anomalia adicional. |
+| Origem SMTP | `149[.]28[.]215[.]14` | IP registrado no primeiro salto externo de `Received` e em `X-Sender-IP`. A reputação/propriedade do IP não foi enriquecida externamente nesta análise. |
+| HELO / Received | `127[.]0[.]1[.]1` | Nome apresentado no salto SMTP usa endereço de loopback, enquanto o IP de conexão registrado é `149[.]28[.]215[.]14`; anomalia adicional. |
 | Antispam | `SCL: 9`, `dest:J`, `RF:JunkEmail` | Os metadados indicam entrega na pasta de lixo eletrônico. A Microsoft ressalta que SCL isolado não determina, por si só, o veredito ou a ação final no Microsoft 365. |
-| URL do botão | Host real: `dete2-489991573399.southamerica-east1.run.app` | O texto com aparência de Microsoft aparece antes de `@` como userinfo. O hostname real está depois de `@`, não em microsoft.com nem em domínio governamental. |
+| URL do botão | Host real: `dete2-489991573399[.]southamerica-east1[.]run[.]app` | O texto com aparência de Microsoft aparece antes de `@` como userinfo. O hostname real está depois de `@`, não em microsoft.com nem em domínio governamental. |
 | Conteúdo | Ameaça de suspensão; prazo 15/10/2026; botão de “regularização” | Urgência, ameaça e chamada à ação são técnicas de engenharia social. |
 | Inconsistência de processo | Número do processo no assunto difere do protocolo no corpo | Os identificadores apresentados não são consistentes entre si. |
 | CNPJ no rodapé | Dígitos verificadores não conferem | A validação matemática local do CNPJ informado resultou em final `27`, enquanto o e-mail apresenta final `80`. Não foi feita consulta cadastral à Receita Federal. |
@@ -50,9 +50,9 @@ Os indicadores abaixo estão defangados para evitar acesso acidental.
 
 | Tipo | Indicador | Contexto |
 |---|---|---|
-| IPv4 | `149.28.215[.]14` | IP de conexão SMTP registrado pelo servidor receptor. |
+| IPv4 | `149[.]28[.]215[.]14` | IP de conexão SMTP registrado pelo servidor receptor. |
 | Hostname | `dete2-489991573399[.]southamerica-east1[.]run[.]app` | Host real extraído do href do botão. |
-| Remetente | `infracao@detran276448` | Endereço em From e Return-Path. |
+| Remetente | `infracao[@]detran276448` | Endereço em From e Return-Path. |
 
 ## 4. Corroboração oficial
 
