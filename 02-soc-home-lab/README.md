@@ -3,6 +3,8 @@
 **Status:** cinco cenários controlados concluídos; documentação técnica v2.0.  
 **Escopo:** laboratório local, virtualizado e isolado.
 
+Veja também a [apresentação web](../docs/index.html) e os [rascunhos de divulgação](../docs/rascunhos-linkedin.md). A página está preparada para revisão; ainda não foi publicada no GitHub Pages.
+
 ## Objetivo
 
 Praticar o fluxo operacional básico de um SOC: gerar atividades benignas e controladas, coletar telemetria Windows, encaminhar eventos ao Wazuh, validar regras e alertas, analisar contexto e registrar evidências e limitações.
@@ -41,7 +43,7 @@ Relatórios individuais: [01 — T1033](./cenarios/01-whoami-t1033.md) · [02 �
 
 ## Evidências e privacidade
 
-Os exports JSON originais e as capturas não sanitizadas permanecem em armazenamento privado. O pacote público descreve as evidências sem reproduzir dados internos. O índice distingue materiais confirmados e transferências ainda pendentes.
+Os exports JSON originais e as capturas não sanitizadas permanecem em armazenamento privado. O pacote público contém quatro recortes de evidência revisados: dois do cenário 04 e dois do cenário 05. Os cenários 01–03 usam cartões técnicos textuais. O índice informa lacunas e divergências de cópias sem expor conteúdo bruto.
 
 Não publicar exports brutos, `archives.json`, configurações integrais, credenciais, GUIDs, hashes de processos, IDs internos ou endereços privados.
 

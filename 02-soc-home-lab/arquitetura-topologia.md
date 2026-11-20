@@ -17,9 +17,9 @@ flowchart LR
 
 | Máquina | Papel | Versão observada |
 |---|---|---|
-| SOC-Wazuh-Server | SIEM: Manager, Indexer e Dashboard | Ubuntu Server 24.04.5 LTS; Wazuh 4.14.10 |
-| SOC-Windows-Endpoint | Endpoint monitorado | Windows 11 Pro; Wazuh Agent 4.14.10; Sysmon 15.22 |
-| SOC-Kali-Attacker | Origem de atividades de reconhecimento | Kali Linux 2026.3; Nmap 7.99 |
+| Servidor SIEM | Manager, Indexer e Dashboard | Ubuntu Server 24.04.5 LTS; Wazuh 4.14.10 |
+| Endpoint Windows | Endpoint monitorado | Windows 11 Pro; Wazuh Agent 4.14.10; Sysmon 15.22 |
+| Estação de testes Linux | Origem de atividades controladas | Kali Linux 2026.3; Nmap 7.99 |
 | Host | Virtualização | Oracle VirtualBox 7.2.22 |
 
 ## Rede

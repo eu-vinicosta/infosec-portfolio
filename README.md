@@ -10,9 +10,15 @@ Este repositório reúne estudos práticos, laboratórios controlados e document
 
 | Projeto | Foco | Status |
 |---|---|---|
-| [01 — Phishing Analysis](./01-phishing-analysis/README.md) | Triagem de e-mail suspeito, cabeçalhos e IOCs | Versão 1.0 concluída; divulgação complementar pendente |
+| [01 — Phishing Analysis](./01-phishing-analysis/README.md) | Triagem de e-mail suspeito, cabeçalhos e IOCs | Versão 1.0 concluída; rascunho de divulgação preparado |
 | [02 — SOC Home Lab](./02-soc-home-lab/README.md) | Monitoramento Windows, SIEM Wazuh, detecção e correlação | Cinco cenários controlados concluídos; documentação técnica v2.0 |
 | [03 — TryHackMe](./03-tryhackme/README.md) | Laboratórios e anotações de segurança | Em organização |
+
+## Apresentação e divulgação
+
+- [Apresentação web do portfólio](./docs/index.html) — pronta para revisão; GitHub Pages ainda não foi habilitado.
+- [Instruções para GitHub Pages](./docs/publicacao-github-pages.md).
+- [Rascunhos para LinkedIn](./docs/rascunhos-linkedin.md) — não publicados.
 
 ## Competências trabalhadas
 

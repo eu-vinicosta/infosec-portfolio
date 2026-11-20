@@ -41,4 +41,13 @@ A detecção demonstra que a regra nativa identificou o uso de um mecanismo de e
 
 ## Evidência
 
-O alerta foi exportado e validado em JSON no servidor Wazuh. O arquivo ainda precisa ser transferido para a pasta privada central de evidências; não está incluído neste pacote público.
+O export original de 4.018 bytes foi localizado no Dropbox e validado como JSON, com timestamp `2026-11-19T23:46:18.632+0000`, regra 92057, nível 12, MITRE T1059.001 e Sysmon Event ID 1. O arquivo bruto não está incluído neste pacote público.
+
+O índice privado registra cópias anteriores de 5.107 bytes, reserializadas a partir do conteúdo fornecido na conversa. Como já existem arquivos com o mesmo nome nos destinos de evidências e logs, a reconciliação das cópias byte a byte permanece pendente para evitar sobrescrever material existente. A exportação original localizada permanece em armazenamento privado.
+
+Recortes públicos revisados:
+
+- [Visão geral dos dois alertas 92057](../../docs/assets/evidence/scenario-05-wazuh-alert-overview.png)
+- [Detalhe da regra 92057, nível 12, MITRE T1059.001](../../docs/assets/evidence/scenario-05-wazuh-alert-detail.png)
+
+Os recortes não mostram o hostname do endpoint ou do Manager nem o JSON bruto.

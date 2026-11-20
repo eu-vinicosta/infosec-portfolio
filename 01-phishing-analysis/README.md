@@ -1,6 +1,6 @@
 # 01 — Phishing Analysis
 
-**Status:** Versão 1.0 concluída | Apresentação no LinkedIn pendente
+**Status:** Versão 1.0 concluída | Rascunho de divulgação preparado; publicação pendente
 
 ## Projeto
 
@@ -12,8 +12,8 @@ Investigação estática de uma mensagem que se apresenta como notificação do 
 
 Principais achados:
 - SPF, DKIM e DMARC sem resultados positivos (`none`).
-- Remetente e Return-Path usando `infracao@detran276448`, sem domínio institucional oficial.
-- IP observado no primeiro salto SMTP: `149.28.215.14`.
+- Remetente e Return-Path usando `infracao[@]detran276448`, sem domínio institucional oficial.
+- IP observado no primeiro salto SMTP: `149[.]28[.]215[.]14`.
 - URL com texto semelhante a Microsoft antes de `@`; o host real está depois de `@` e usa `run.app`.
 - Identificadores de processo e protocolo inconsistentes.
 - CNPJ informado no rodapé não passa na validação matemática dos dígitos verificadores.
@@ -23,6 +23,7 @@ Principais achados:
 
 - [Relatório completo sanitizado](./relatorio-phishing-detran.md)
 - [Repositório principal](../README.md)
+- [Rascunho de publicação para LinkedIn](../docs/rascunhos-linkedin.md#projeto-01--phishing-analysis)
 
 O PDF de uma página e a prévia visual foram arquivados no Dropbox privado, junto da mensagem original. O repositório público contém apenas a documentação sanitizada em Markdown. Dados pessoais do destinatário e identificadores internos da caixa postal foram omitidos.
 
@@ -36,7 +37,8 @@ O PDF de uma página e a prévia visual foram arquivados no Dropbox privado, jun
 - [x] Evidência visual sanitizada arquivada no Dropbox privado.
 - [x] PDF executivo arquivado no Dropbox privado.
 - [x] Relatório técnico sanitizado publicado no GitHub.
-- [ ] Preparar e publicar apresentação no LinkedIn (próxima etapa).
+- [x] Preparar rascunho para apresentação no LinkedIn.
+- [ ] Revisar e publicar a apresentação no LinkedIn.
 
 ## Metodologia e segurança
 

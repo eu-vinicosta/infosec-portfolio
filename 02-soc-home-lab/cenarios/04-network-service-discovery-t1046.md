@@ -41,3 +41,10 @@ O resultado não deve ser descrito como descoberta de portas abertas: nenhuma fo
 ## Evidências
 
 Foram preservados em armazenamento privado: captura de conectividade Kali → Windows, captura do resultado Nmap, visão geral de alertas, detalhe do alerta e export JSON original. O arquivo textual de saída do Nmap ainda precisa ser incorporado ao conjunto privado de evidências.
+
+Recortes públicos revisados:
+
+- [Resultado Nmap — 20 portas `filtered`](../../docs/assets/evidence/scenario-04-nmap-results.png)
+- [Detalhe do alerta Wazuh — regra 100104, nível 10, MITRE T1046](../../docs/assets/evidence/scenario-04-wazuh-alert-detail.png)
+
+Os recortes omitem endereço MAC, IPs, hostname e campos de evento que não são necessários para sustentar o resultado. O Event ID 5157 está documentado acima; os dados integrais permanecem privados.

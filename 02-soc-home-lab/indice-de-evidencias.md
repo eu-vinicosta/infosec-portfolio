@@ -2,19 +2,26 @@
 
 Este índice descreve o estado conhecido das evidências. Os exports originais do Wazuh e capturas não sanitizadas devem permanecer em armazenamento privado. O repositório público contém documentação e deve receber apenas versões de imagens/trechos revisadas.
 
-## Exports JSON originais confirmados
+## Exports privados de detecção
 
-| Cenário | Nome do export privado | Detecção | Estado confirmado |
+| Cenário | Arquivo/registro | Detecção | Estado confirmado |
 |---|---|---|---|
-| 01 — T1033 | 01-detection-whoami-wazuh-export-original.json | Local 100100 | Dropbox: logs/ e evidencias/ |
-| 02 — T1016 | 02-detection-ipconfig-wazuh-export-original.json | Local 100101 | Dropbox: logs/ e evidencias/ |
-| 03 — T1110.001 | 03-detection-password-guessing-wazuh-export-original.json | Local 100102 | Dropbox: logs/ e evidencias/ |
-| 04 — T1046 | 04-detection-network-service-discovery-wazuh-export-original.json | Local 100104 | Dropbox: logs/ e evidencias/ |
-| 05 — T1059.001 | cenario05-alerta-wazuh-92057.json | Nativa 92057, nível 12 | Arquivo confirmado no servidor Wazuh; transferência para a pasta privada central pendente |
+| 01 — T1033 | Export JSON original | Local 100100 | Confirmado em armazenamento privado |
+| 02 — T1016 | Export JSON original | Local 100101 | Confirmado em armazenamento privado |
+| 03 — T1110.001 | Export JSON original | Local 100102 | Confirmado em armazenamento privado |
+| 04 — T1046 | Export JSON original | Local 100104 | Confirmado em armazenamento privado |
+| 05 — T1059.001 | Export JSON original, 4.018 bytes | Nativa 92057, nível 12 | Localizado no Dropbox e validado; cópias canônicas pendentes de reconciliação com versões anteriores reserializadas de 5.107 bytes |
 
-## Capturas confirmadas no Dropbox
+## Evidências visuais selecionadas para publicação
 
-O cenário 04 possui quatro capturas organizadas: conectividade Kali → Windows, resultado da varredura Nmap, visão geral de alertas e detalhe do alerta. Os nomes originais permanecem no índice privado para não expor metadados desnecessários.
+| Cenário | Arquivo público | Conteúdo preservado e sanitização |
+|---|---|---|
+| 04 — T1046 | `docs/assets/evidence/scenario-04-nmap-results.png` | Tabela Nmap das 20 portas, todas `filtered`; MAC e identidade do terminal omitidos |
+| 04 — T1046 | `docs/assets/evidence/scenario-04-wazuh-alert-detail.png` | Regra 100104, nível 10, T1046; IPs, hostname e campos internos omitidos |
+| 05 — T1059.001 | `docs/assets/evidence/scenario-05-wazuh-alert-overview.png` | Dois eventos da regra 92057, nível 12; sem hostname visível |
+| 05 — T1059.001 | `docs/assets/evidence/scenario-05-wazuh-alert-detail.png` | Regra 92057, nível 12, T1059.001; nome do Manager omitido |
+
+Os cenários 01–03 são representados por cartões técnicos textuais; não foram selecionadas capturas de baixa qualidade ou com dados internos.
 
 ## Fontes de telemetria por cenário
 
@@ -26,9 +33,9 @@ O cenário 04 possui quatro capturas organizadas: conectividade Kali → Windows
 
 ## Pendências de evidência
 
-- Transferir o JSON do alerta 92057 do servidor Wazuh para o armazenamento privado central.
+- Reconciliar as cópias privadas do JSON 92057: a exportação original localizada no Dropbox tem 4.018 bytes; os dois arquivos já existentes nos destinos de `evidencias/` e `logs/` têm 5.107 bytes e são versões reserializadas. Nenhum arquivo foi sobrescrito.
 - Copiar a saída textual do Nmap (nmap-soc-win11-scenario04-final.txt) da Kali para o armazenamento privado central.
-- Revisar e sanitizar capturas dos cenários 01–03 antes de decidir se serão incluídas em uma apresentação pública.
+- Manter os recortes públicos em sincronização com as versões aprovadas no Dropbox privado.
 
 A ausência de um item neste pacote público não significa que o teste não ocorreu; significa que a evidência ainda não foi incorporada ou aprovada para publicação.
 
