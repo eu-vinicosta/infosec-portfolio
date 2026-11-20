@@ -43,7 +43,7 @@ Relatórios individuais: [01 — T1033](./cenarios/01-whoami-t1033.md) · [02 �
 
 ## Evidências e privacidade
 
-Os exports JSON originais e as capturas não sanitizadas permanecem em armazenamento privado. O pacote público contém quatro recortes de evidência revisados: dois do cenário 04 e dois do cenário 05. Os cenários 01–03 usam cartões técnicos textuais. O índice informa lacunas e divergências de cópias sem expor conteúdo bruto.
+Os exports JSON originais e as capturas não sanitizadas permanecem em armazenamento privado. O pacote público contém quatro recortes de evidência revisados: dois do cenário 04 e dois do cenário 05. Os cenários 01–03 usam cartões técnicos textuais. O índice informa as evidências confirmadas e a saída textual do Nmap que ainda falta localizar, sem expor conteúdo bruto.
 
 Não publicar exports brutos, `archives.json`, configurações integrais, credenciais, GUIDs, hashes de processos, IDs internos ou endereços privados.
 

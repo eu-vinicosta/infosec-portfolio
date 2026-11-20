@@ -43,7 +43,7 @@ A detecção demonstra que a regra nativa identificou o uso de um mecanismo de e
 
 O export original de 4.018 bytes foi localizado no Dropbox e validado como JSON, com timestamp `2026-11-19T23:46:18.632+0000`, regra 92057, nível 12, MITRE T1059.001 e Sysmon Event ID 1. O arquivo bruto não está incluído neste pacote público.
 
-O índice privado registra cópias anteriores de 5.107 bytes, reserializadas a partir do conteúdo fornecido na conversa. Como já existem arquivos com o mesmo nome nos destinos de evidências e logs, a reconciliação das cópias byte a byte permanece pendente para evitar sobrescrever material existente. A exportação original localizada permanece em armazenamento privado.
+O original SCP de 4.018 bytes foi copiado sem alteração para `evidencias/` e `logs/` como `05-detection-powershell-encoded-wazuh-export-scp-original.json`. As cópias anteriores de 5.107 bytes, reserializadas a partir do conteúdo fornecido na conversa, foram mantidas intactas com seus nomes originais. O JSON bruto continua fora deste repositório público.
 
 Recortes públicos revisados:
 

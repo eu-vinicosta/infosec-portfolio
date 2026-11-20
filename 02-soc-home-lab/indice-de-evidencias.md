@@ -10,7 +10,7 @@ Este índice descreve o estado conhecido das evidências. Os exports originais d
 | 02 — T1016 | Export JSON original | Local 100101 | Confirmado em armazenamento privado |
 | 03 — T1110.001 | Export JSON original | Local 100102 | Confirmado em armazenamento privado |
 | 04 — T1046 | Export JSON original | Local 100104 | Confirmado em armazenamento privado |
-| 05 — T1059.001 | Export JSON original, 4.018 bytes | Nativa 92057, nível 12 | Localizado no Dropbox e validado; cópias canônicas pendentes de reconciliação com versões anteriores reserializadas de 5.107 bytes |
+| 05 — T1059.001 | `05-detection-powershell-encoded-wazuh-export-scp-original.json` | Nativa 92057, nível 12 | Original SCP de 4.018 bytes validado e arquivado em `evidencias/` e `logs/`; cópias anteriores reserializadas de 5.107 bytes preservadas separadamente |
 
 ## Evidências visuais selecionadas para publicação
 
@@ -33,9 +33,7 @@ Os cenários 01–03 são representados por cartões técnicos textuais; não fo
 
 ## Pendências de evidência
 
-- Reconciliar as cópias privadas do JSON 92057: a exportação original localizada no Dropbox tem 4.018 bytes; os dois arquivos já existentes nos destinos de `evidencias/` e `logs/` têm 5.107 bytes e são versões reserializadas. Nenhum arquivo foi sobrescrito.
 - Copiar a saída textual do Nmap (nmap-soc-win11-scenario04-final.txt) da Kali para o armazenamento privado central.
-- Manter os recortes públicos em sincronização com as versões aprovadas no Dropbox privado.
 
 A ausência de um item neste pacote público não significa que o teste não ocorreu; significa que a evidência ainda não foi incorporada ou aprovada para publicação.
 
