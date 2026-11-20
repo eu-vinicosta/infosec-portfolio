@@ -40,7 +40,7 @@ O resultado não deve ser descrito como descoberta de portas abertas: nenhuma fo
 
 ## Evidências
 
-Foram preservados em armazenamento privado: captura de conectividade Kali → Windows, captura do resultado Nmap, visão geral de alertas, detalhe do alerta e export JSON original. O arquivo textual de saída do Nmap ainda precisa ser incorporado ao conjunto privado de evidências.
+Foram preservados em armazenamento privado: captura de conectividade Kali → Windows, captura do resultado Nmap, visão geral de alertas, detalhe do alerta e export JSON original. O usuário confirmou a presença do output textual original na VM Kali. Uma cópia sanitizada, sem IP privado e endereço MAC, foi incluída em [evidencias/nmap-soc-win11-scenario04-sanitizado.txt](../evidencias/nmap-soc-win11-scenario04-sanitizado.txt).
 
 Recortes públicos revisados:
 
