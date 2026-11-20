@@ -12,11 +12,12 @@ Este índice descreve o estado conhecido das evidências. Os exports originais d
 | 04 — T1046 | Export JSON original | Local 100104 | Confirmado em armazenamento privado |
 | 05 — T1059.001 | `05-detection-powershell-encoded-wazuh-export-scp-original.json` | Nativa 92057, nível 12 | Original SCP de 4.018 bytes validado e arquivado em `evidencias/` e `logs/`; cópias anteriores reserializadas de 5.107 bytes preservadas separadamente |
 
-## Evidências visuais selecionadas para publicação
+## Evidências públicas selecionadas
 
 | Cenário | Arquivo público | Conteúdo preservado e sanitização |
 |---|---|---|
 | 04 — T1046 | `docs/assets/evidence/scenario-04-nmap-results.png` | Tabela Nmap das 20 portas, todas `filtered`; MAC e identidade do terminal omitidos |
+| 04 — T1046 | `evidencias/nmap-soc-win11-scenario04-sanitizado.txt` | Output textual fornecido a partir do original; IP privado e MAC removidos; 20 portas `filtered` |
 | 04 — T1046 | `docs/assets/evidence/scenario-04-wazuh-alert-detail.png` | Regra 100104, nível 10, T1046; IPs, hostname e campos internos omitidos |
 | 05 — T1059.001 | `docs/assets/evidence/scenario-05-wazuh-alert-overview.png` | Dois eventos da regra 92057, nível 12; sem hostname visível |
 | 05 — T1059.001 | `docs/assets/evidence/scenario-05-wazuh-alert-detail.png` | Regra 92057, nível 12, T1059.001; nome do Manager omitido |
@@ -31,11 +32,9 @@ Os cenários 01–03 são representados por cartões técnicos textuais; não fo
 - Cenário 04: Windows Security Event ID 5157 — conexão bloqueada pela Windows Filtering Platform.
 - Cenário 05: Sysmon Event ID 1 — criação de processo PowerShell com -EncodedCommand.
 
-## Pendências de evidência
+## Preservação da evidência textual
 
-- Copiar a saída textual do Nmap (nmap-soc-win11-scenario04-final.txt) da Kali para o armazenamento privado central.
-
-A ausência de um item neste pacote público não significa que o teste não ocorreu; significa que a evidência ainda não foi incorporada ou aprovada para publicação.
+A cópia pública sanitizada do output Nmap foi derivada do arquivo original `nmap-soc-win11-scenario04-final.txt`, cuja existência foi confirmada pelo usuário. O original não foi alterado nem transferido por esta atualização e permanece na VM Kali. A cópia pública omite o IP privado e o endereço MAC.
 
 ## Privacidade e preservação
 
