@@ -1,6 +1,6 @@
 # Rascunhos para LinkedIn
 
-Os textos abaixo são rascunhos. Não foram publicados. Substitua os marcadores de link depois da revisão e da publicação desejada.
+Os textos abaixo são rascunhos e ainda não foram publicados. Revise cada texto antes de publicar; os links do portfólio apontam para os recursos públicos atuais.
 
 ## Projeto 01 — Phishing Analysis
 
@@ -34,7 +34,7 @@ O material reúne uma análise estática de phishing e um SOC Home Lab com cinco
 
 Estou preparando a próxima etapa de aprendizagem em TryHackMe; ela ainda não foi iniciada neste fechamento.
 
-Portfólio: [inserir link do GitHub Pages após a publicação]
+Portfólio: https://eu-vinicosta.github.io/infosec-portfolio/
 Código e relatórios: https://github.com/eu-vinicosta/infosec-portfolio
 
 #SegurançaDaInformação #SOC #BlueTeam #Cybersecurity #Portfólio

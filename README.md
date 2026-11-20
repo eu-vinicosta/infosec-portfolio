@@ -16,8 +16,8 @@ Este repositório reúne estudos práticos, laboratórios controlados e document
 
 ## Apresentação e divulgação
 
-- [Apresentação web do portfólio](./docs/index.html) — pronta para revisão; GitHub Pages ainda não foi habilitado.
-- [Instruções para GitHub Pages](./docs/publicacao-github-pages.md).
+- [Apresentação web do portfólio](https://eu-vinicosta.github.io/infosec-portfolio/) — publicada pelo GitHub Pages a partir de `main/docs`; código-fonte em [docs/index.html](./docs/index.html).
+- [Informações de publicação no GitHub Pages](./docs/publicacao-github-pages.md) — fonte configurada e endereço público.
 - [Rascunhos para LinkedIn](./docs/rascunhos-linkedin.md) — não publicados.
 
 ## Competências trabalhadas

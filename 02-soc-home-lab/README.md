@@ -3,7 +3,7 @@
 **Status:** cinco cenários controlados concluídos; documentação técnica v2.0.  
 **Escopo:** laboratório local, virtualizado e isolado.
 
-Veja também a [apresentação web](../docs/index.html) e os [rascunhos de divulgação](../docs/rascunhos-linkedin.md). A página está preparada para revisão; ainda não foi publicada no GitHub Pages.
+Veja também a [apresentação web publicada](https://eu-vinicosta.github.io/infosec-portfolio/), seu [código-fonte](../docs/index.html) e os [rascunhos de divulgação](../docs/rascunhos-linkedin.md). A fonte do GitHub Pages está configurada em `main/docs`.
 
 ## Objetivo
 
